@@ -1,4 +1,5 @@
 import { FaBullhorn, FaCogs, FaUsers, FaChartBar } from 'react-icons/fa';
+import "./DigitalNarratives.css";
 
 const items = [
   {
