@@ -1,0 +1,110 @@
+.digital-section {
+  padding: 60px 40px;
+  background: #e8eaf0;
+  text-align: center;
+}
+
+.digital-header {
+  margin-bottom: 40px;
+}
+
+.digital-header h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #3a3d52;
+  margin: 0 0 14px;
+  line-height: 1.35;
+}
+
+.digital-header h2 strong {
+  color: #6c8ebf;
+  font-weight: 800;
+}
+
+.digital-header p {
+  font-size: 14px;
+  color: #8a90a8;
+  line-height: 1.7;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.digital-card {
+  background: #e8eaf0;
+  border-radius: 24px;
+  padding: 36px;
+  box-shadow:
+    10px 10px 24px #c5c8d2,
+    -10px -10px 24px #ffffff;
+}
+
+.digital-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.digital-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 32px 24px;
+}
+
+.digital-item:nth-child(1),
+.digital-item:nth-child(2) {
+  border-bottom: 1px solid #d4d7e0;
+}
+
+.digital-item:nth-child(1),
+.digital-item:nth-child(3) {
+  border-right: 1px solid #d4d7e0;
+}
+
+.digital-item .icon-circle {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: #e8eaf0;
+  box-shadow:
+    5px 5px 14px #c5c8d2,
+    -5px -5px 14px #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  font-size: 24px;
+  color: #6c8ebf;
+  transition: box-shadow 0.25s ease;
+}
+
+.digital-item:hover .icon-circle {
+  box-shadow:
+    inset 4px 4px 10px #c5c8d2,
+    inset -4px -4px 10px #ffffff;
+}
+
+.digital-item h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #3a3d52;
+  margin: 0 0 10px;
+}
+
+.digital-item p {
+  font-size: 13px;
+  color: #8a90a8;
+  line-height: 1.65;
+  margin: 0;
+  max-width: 220px;
+}
+
+@media (max-width: 600px) {
+  .digital-section { padding: 40px 20px; }
+  .digital-grid { grid-template-columns: 1fr; }
+  .digital-item:nth-child(1),
+  .digital-item:nth-child(2) { border-bottom: 1px solid #d4d7e0; }
+  .digital-item:nth-child(1),
+  .digital-item:nth-child(3) { border-right: none; }
+  .digital-item:last-child { border-bottom: none; }
+}

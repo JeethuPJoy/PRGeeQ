@@ -1,0 +1,116 @@
+.platform-features {
+  padding: 60px 40px;
+  /* background: #e8eaf0; */
+  border-radius: 20px;
+  margin-top: 24px;
+}
+
+.platform-features .section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.platform-features .section-tag {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #6c8ebf;
+  margin-bottom: 10px;
+}
+
+.platform-features .section-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #3a3d52;
+  margin: 0 0 10px;
+}
+
+.platform-features .section-sub {
+  font-size: 15px;
+  color: #8a90a8;
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.feature-grid {
+  display: grid;
+  /* grid-template-columns: repeat(1, 1fr);
+  gap: 28px; */
+}
+
+.feature-box {
+  background: #e8eaf0;
+  border-radius: 20px;
+  padding: 32px 24px 28px;
+  box-shadow: 8px 8px 18px #c5c8d2, -8px -8px 18px #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.feature-box:hover {
+  box-shadow:
+    4px 4px 10px #c5c8d2,
+    -4px -4px 10px #ffffff,
+    inset 2px 2px 6px #c5c8d2,
+    inset -2px -2px 6px #ffffff;
+  transform: translateY(-4px);
+}
+
+.feature-box .icon-circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #e8eaf0;
+  box-shadow: 5px 5px 12px #c5c8d2, -5px -5px 12px #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #6c8ebf;
+}
+
+.feature-box h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #3a3d52;
+  margin: 0 0 10px;
+}
+
+.feature-box p {
+  font-size: 13px;
+  color: #8a90a8;
+  line-height: 1.65;
+  margin: 0;
+}
+
+@media (min-width: 425px) {
+  .feature-grid { grid-template-columns: repeat(1, 1fr); gap: 18px; }
+  .platform-features { padding: 40px 20px; }
+}
+
+@media (min-width: 768px) {
+  .feature-grid { 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 18px; 
+  }
+  
+  .platform-features { 
+    padding: 40px 20px; 
+  }
+}
+
+@media (min-width: 1024px){  
+  .platform-features {    
+    width: calc(100% - 50px);
+    max-width: 1140px;
+    padding: 24px;
+    justify-self: center;
+  }
+}

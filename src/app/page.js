@@ -1,4 +1,7 @@
 import Navbar from "./components/Navbar";
+import HeroSlider from "./components/HeroSlider";
+import PlatformFeatures from "./components/PlatformFeatures";
+import DigitalNarratives from "./components/DigitalNarratives";
 
 export default function Home() {
   return (
@@ -6,7 +9,9 @@ export default function Home() {
       <Navbar />
 
       <main style={{ padding: "40px", textAlign: "center" }}>
-        <h1>LMS Dashboard</h1>
+        <HeroSlider />
+        <PlatformFeatures />
+        <DigitalNarratives />
       </main>
     </div>
   );
